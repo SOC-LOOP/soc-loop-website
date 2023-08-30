@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    --bg-primary: #032a4b;
+    --bg-secondary: #054982;
+    --bg-tertiary: #0070c2;
+    --off-white: #fafafa;
+}
+body{
+    min-height: 100vh;
+}
+
+.logo{
+    padding: 0;
+    margin: 0;
+    height: 3.5rem;
+}
+
+.logo img{
+    width: 8em;
+    height: auto;
+}
+
+header{
+    max-height: 5em;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    background-color: var(--off-white);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #bdc1c6;
+    box-shadow: 1px 1px 2px #bdc1c6;
+}
+
+.navbar{
+    max-width: fit-content;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    width: 100%;
+}
+.nav-item a:hover{
+    border-bottom: 2px solid var(--bg-primary);
+}
+.nav-link{
+    margin-left: 20px;
+    display: inline;
+    justify-content: space-between;
+    padding: 1.69rem 1.5rem;
+    color: var(--bg-tertiary);
+    text-decoration: none;
+    font-weight: 550;
+}
+.nav-link:hover{
+    font-weight: 550;
+    color: var(--bg-primary);
+}
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: #032a4b;
+}
+body::-webkit-scrollbar-thumb{
+    background: #0070c2;
+}
+#body{
+    background-color: var(--bg-primary);
+    position: absolute;
+    width: 100%;
+}
+.title a{
+    text-decoration: none;
+    color: var(--off-white);
+}
+.title, .body{
+    margin-left: 20px;
+    color: var(--off-white);
+}
+
+.home{
+    padding: 5em;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background: var(--off-white);
+    color: var(--bg-primary);
+}
+.home-content{
+    max-width: 50%;
+}
+.home img{
+    width: 75%;
+}
+.home-img{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+}
+.about{
+    background: var(--bg-secondary);
+}
+.section{
+    min-height: 100vh;
+}
